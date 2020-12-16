@@ -1,0 +1,74 @@
+package br.com.projetofinal.beans;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class AgenteFinanceiro {
+	
+	
+	@Id // primary key
+	@GeneratedValue(strategy = GenerationType.IDENTITY) //auto incremento
+	@Column(name="id_agente")
+	private byte id_agente;
+	
+	
+	private String nome_agente;
+	private int volume_transacional;
+	
+	
+	
+	
+	
+	@Override
+	public String toString() {
+		return "AgenteFinanceiro [id_agente=" + id_agente + ", nome_agente=" + nome_agente + ", volume_transacional="
+				+ volume_transacional + "]";
+	}
+
+
+	public AgenteFinanceiro() {
+		super();
+	}
+	
+
+	public AgenteFinanceiro(byte id_agente, String nome_agente, int volume_transacional) {
+		super();
+		this.id_agente = id_agente;
+		this.nome_agente = nome_agente;
+		this.volume_transacional = volume_transacional;
+	}
+	
+	public byte getId_agente() {
+		return id_agente;
+	}
+	public void setId_agente(byte id_agente) {
+		this.id_agente = id_agente;
+	}
+	public String getNome_agente() {
+		return nome_agente;
+	}
+	public void setNome_agente(String nome_agente) {
+		this.nome_agente = nome_agente;
+	}
+	public int getVolume_transacional() {
+		return volume_transacional;
+	}
+	public void setVolume_transacional(int volume_transacional) {
+		this.volume_transacional = volume_transacional;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,12 @@
+package br.com.projetofinal.dao;
+
+import javax.transaction.Transaction;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface TransactionDAO {
+	
+	public interface MusicaDAO extends CrudRepository<Transaction, Integer>{
+
+}
+}

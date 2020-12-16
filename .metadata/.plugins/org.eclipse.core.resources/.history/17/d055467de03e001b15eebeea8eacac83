@@ -1,0 +1,14 @@
+package br.com.projetofinal.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import br.com.projetofinal.beans.Agente;
+
+public interface AgenteDAO {
+	
+	public interface ArtistaDAO extends CrudRepository<Agente, Integer>{
+
+}
+	
+	
+}
