@@ -1,5 +1,0 @@
-package br.com.projetofinal.dao;
-
-public interface AgenteDAO {
-
-}
