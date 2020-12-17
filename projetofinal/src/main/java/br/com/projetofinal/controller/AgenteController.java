@@ -23,6 +23,11 @@ public class AgenteController {
 	@Autowired
 	private AgenteDAO dao;
 	
+	@GetMapping("/")
+	public ResponseEntity <String> home(){
+		return ResponseEntity.ok("Seja bem vindo!!");
+	}
+	
 	@GetMapping("/agente/{cod}" )
 	public  ResponseEntity <Agente> getAgente(@PathVariable int cod) {
 		Agente agente = dao.findById(cod).orElse(null);

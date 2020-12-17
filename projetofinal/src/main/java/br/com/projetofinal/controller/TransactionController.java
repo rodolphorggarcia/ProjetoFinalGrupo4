@@ -22,11 +22,21 @@ public class TransactionController {
 	private TransactionDAO dao;
 	
 	
-	/*
-	@GetMapping("/totallancamento/{artista}")
-	public ResponseEntity<Integer> getTotalLancamento(@PathVariable int artista){
-		return ResponseEntity.ok(dao.findByTotalLancamento(artista));
-	}*/
+	
+	@GetMapping("/totalsucesso/{agente}")
+	public ResponseEntity<Integer> getTotalSucesso(@PathVariable int agente){
+		return ResponseEntity.ok(dao.findByTotalSucesso(agente));
+	}
+	
+	@GetMapping("/totalfalha/{agente}")
+	public ResponseEntity<Integer> getTotalFalha(@PathVariable int agente){
+		return ResponseEntity.ok(dao.findByTotalFalha(agente));
+	}
+	
+	@GetMapping("/totalfraude/{agente}")
+	public ResponseEntity<Integer> getTotalFraude(@PathVariable int agente){
+		return ResponseEntity.ok(dao.findByTotalFraude(agente));
+	}
 	
 	
 	@PostMapping("/novatransacao")

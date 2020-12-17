@@ -1,0 +1,79 @@
+
+p{
+    color:blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    }
+
+body{
+    background-color: rgba(240, 245, 173, 0.726);
+}
+.menu{
+    color:rgb(15, 15, 95);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.lista{
+    color:rgb(93, 5, 67);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo{
+    color:rgb(41, 61, 29);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.logo{
+    width:172px;
+    height:73px;
+}
+
+label{
+    color:rgb(5, 93, 12);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+    color:rgb(5, 93, 12);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#formulario_contato{
+    background-color: rgb(235, 241, 235);
+}
+
+.campo_nome{
+    position: absolute;
+    left: 85px;
+    width: 240px;
+
+}
+
+.container{
+    border:3px solid brown;
+    width: 500px;
+    
+}
+
+.div1{
+    background-color: yellow;
+}
+
+.div2{
+    background-color: rgb(59, 238, 118);
+}
+
+.div3{
+    background-color: rgb(41, 109, 141);
+}
+
+.div4{
+    background-color: rgb(241, 22, 22);
+}
