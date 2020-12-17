@@ -28,6 +28,11 @@ public class AgenteController {
 		return ResponseEntity.ok("Seja bem vindo!!");
 	}
 	
+	@GetMapping("/agentesordenados" )
+	public ResponseEntity<List<Agente>> getAllOrdenados(){
+		return ResponseEntity.ok(dao.getAgenteOrder());
+	}
+	
 	@GetMapping("/agente/{cod}" )
 	public  ResponseEntity <Agente> getAgente(@PathVariable int cod) {
 		Agente agente = dao.findById(cod).orElse(null);

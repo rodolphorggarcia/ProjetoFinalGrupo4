@@ -1,6 +1,6 @@
 
 function exibiraagentes(){
-    fetch("http:localhost:8080/agentes")
+    fetch("http:localhost:8080/agentesordenados")
     .then(res => res.json())
     .then(res => preenchercombo(res))
     
@@ -46,14 +46,25 @@ function preenchercombo(lista){
    document.getElementById("cmbagentes").innerHTML=saida;
    tabela+= "</table>";
    document.getElementById("top10").innerHTML=tabela;
-   localStorage.setItem("escolha", JSON.stringify(lista));
+   
 }
 
+function getAgenteId(){
+    fetch("http://localhost:8080/agente/"+document.getElementById("cmbagentes").value)
+    .then(res => res.json())
+    .then (res => {
+        window.location="dashboard.html"
+        localStorage.setItem("pacote", JSON.stringify(res))
+    }
+        )
+
+}
 
 function getTransacoes(){
-    var agentestr = localStorage.getItem("escolha");
+    var agentestr = localStorage.getItem("pacote");
     var agentejson = JSON.parse(agentestr);
-    window.alert(agentejson);
+
+    document.getElementById("total").innerHTML = agentejson.nome_agente +" / "+ agentejson.volume_transacional
     
     fetch("http://localhost:8080/totalsucesso/"+agentejson.id_agente)
     .then(res => res.json())
@@ -73,7 +84,7 @@ function getTransacoes(){
     .then(res => {
         document.getElementById("fraude").innerHTML = 
         "<br> Fraude: " + res});
-    
+    //17/12/2020
 }
 
 
