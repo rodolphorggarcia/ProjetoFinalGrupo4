@@ -3,46 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuário</title>
+    <title>Agente</title>
 
      <!--Especificar de onde é o script que ele vai buscar as funcoes-->
-     <script type="text/javascript" src="js/usuario.js"></script>
+     <script type="text/javascript" src="js/agente.js"></script>
 
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
  
 </head>
-<body onload="exibirusuario()">
+<body onload="getTransacoes()">
 
-    <div class="container">
+    <div class="container"></div>
 
         <div class="row">
             <div class="col-12">
-                <h3 style="text-align: center;">Central do Usuário</h3>
+                <h3 style="text-align: center;">Dashboard</h3>
             </div>
         </div>
 
-        <div class="row">
-            <div id="foto" class="col-12">
-
-            </div>
-        </div>
+        <br><br>
 
         <div class="row">
-            <div id="dados" class="col-12">
+            <div id="sucesso" class="col-12">
                 
             </div>
-        </div> 
+        </div>
+        <div class="row">
+            <div id="falha" class="col-12">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div id="fraude" class="col-12">
+                
+            </div>
+        </div>
 
     </div>
-
-        <br><br>
-        <button onclick="window.location='novousuario.html'" type="button" class="btn btn-primary">Novo usuário</button>
-        <br><br>
-        <button onclick="window.location='artistas.html'" type="button" class="btn btn-primary">Artistas</button>
-        <br><br>
-        <button onclick="window.location='musicas.html'" type="button" class="btn btn-primary">Musicas</button>
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

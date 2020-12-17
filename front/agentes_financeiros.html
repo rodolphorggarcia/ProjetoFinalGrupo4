@@ -7,6 +7,7 @@
 
      <!--Especificar de onde é o script que ele vai buscar as funcoes-->
      <script type="text/javascript" src="js/agente.js"></script>
+     <script type="text/javascript" src="js/usuario.js"></script>
 
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,29 +17,16 @@
 
     <div class="container">
 
+        <br><br>
+        <button onclick="window.location='Login.html'" type="button" class="btn btn-primary" >Logout</button>
+        
         <div class="row">
-            <div class="col-12">
-                <h3 style="text-align: center;">Central do Agente</h3>
+            <br><br>
+            <div id="foto" class="col-12">
+
             </div>
         </div>
 
-        <br><br>
-
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <label class="input-group-text" for="cmbagentes">Agentes</label>
-            </div>
-            <select class="custom-select" id="cmbagentes">
-              
-            </select>
-          </div>
-          
-
-        <br><br>
-        <button onclick="getTransacoes()" type="button" class="btn btn-primary">Filtrar</button>
-        <br><br>
-        <button onclick="window.location='agente.html'" type="button" class="btn btn-primary">Voltar</button>
-        <br><br><br><br>
         <div class="row">
             <div id="dados" class="col-12">
                 
@@ -46,6 +34,27 @@
         </div>
 
 
+        <br><br>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="cmbagentes">Agentes</label>
+            </div>
+        
+            <select onchange="window.location='dashboard.html'" class="custom-select" id="cmbagentes">
+        
+            </select>
+        </div>
+
+          
+
+        <br><br>
+
+        <div class="row">
+            <div id="top10" class="col-12">
+                
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

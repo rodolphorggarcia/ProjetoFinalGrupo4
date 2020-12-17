@@ -40,7 +40,7 @@ function logar(){
     .then(res => res.json())
     .then(res => {
         localStorage.setItem("userlogado", JSON.stringify(res));
-        window.location="usuario.html";
+        window.location="agentes_financeiros.html";
     })
     .catch(err =>{
         window.alert("Login Invalido");

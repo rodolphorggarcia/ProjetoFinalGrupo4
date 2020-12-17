@@ -77,3 +77,11 @@ span{
 .div4{
     background-color: rgb(241, 22, 22);
 }
+
+.botao{
+    position:absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    }
